@@ -82,7 +82,7 @@ html {
 
 body {
   padding: 0;
-  margin: calc((100vh / 25) * 1.563) calc((100vw / 25) * 1.563);
+  /* margin: calc((100vh / 25) * 1.563) calc((100vw / 25) * 1.563); */
   font-weight: 400;
   line-height: 1.563;
   color: var(--color);
@@ -156,7 +156,8 @@ p > *:last-child {
 
 a {
   color: inherit;
-  text-decoration: underline;
+  text-decoration: none;
+  /* text-decoration: underline; */
   text-decoration-color: var(--text-decoration-color);
   -webkit-text-decoration-color: var(--text-decoration-color);
   border-radius: 5px;
@@ -461,7 +462,7 @@ ol,
 ul {
   padding-left: 0;
   margin-top: 0;
-  margin-bottom: 1.563rem;
+  /* margin-bottom: 1.563rem; */
 }
 
 li {
