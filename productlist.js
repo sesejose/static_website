@@ -12,7 +12,7 @@ fetch(url)
 
   .then(function (data) {
     handleProductList(data);
-    // console.log(data);
+    console.log(data);
   });
 
 //And then we get the data

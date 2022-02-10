@@ -2,10 +2,12 @@
 
 //What is window.location.search??
 const urlParams = new URLSearchParams(window.location.search);
-// console.log(window.location.search);
+
 const id = urlParams.get("id");
 
 const url = "https://kea-alt-dk/t7/api/products/" + id;
+
+// console.log(id);
 
 //Fetch the data
 
@@ -23,7 +25,7 @@ fetch(url)
   });
 
 function showProduct(product) {
-  console.log(product);
+  // console.log(product);
   //Changing the image
   // document.querySelector(
   //   "img.productimage"

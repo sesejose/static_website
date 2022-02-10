@@ -12,7 +12,7 @@ fetch(url)
 
   .then(function (data) {
     handleSeasons(data);
-    // console.log(data);
+    console.log(data);
   });
 
 //And then we get the data
@@ -33,7 +33,7 @@ function handleSeasons(data) {
           </a>
         </template>
 */
-function showSeason(seasons) {
+function showSeason(seasons, product) {
   // Grab the product. We We select by ID the content. We define the variable because we're going to use it then.
   const template = document.querySelector("#seasonTemplate").content;
   //Clone it (the product, the template). It is also a variable because we will use it then.
@@ -46,7 +46,7 @@ function showSeason(seasons) {
   //Linking the Ctegory by season https://kea-alt-del.dk/t7/api/seasons
   clone
     .querySelector("a")
-    .setAttribute("href", `seasons.html?season=${seasons.season}`);
+    .setAttribute("href", `productlist.html?season=${product.season}`);
 
   //Grab Parent of the Season (Sections with id #season). We chose the place where we want to paste the clones.
   const parent = document.querySelector("#seasons");
