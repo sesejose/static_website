@@ -3,20 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Brands</title>
-    <link rel="stylesheet" href="css/base.css" />
+    <title>Seasons</title>
+    <link rel="stylesheet" href="base.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="category">
     <header class="mainNav">
-      <h1>Fashion<span>R</span>Us</h1>
       <nav>
-        <a href="#">Categories</a>
-        <a href="category.html">Brands</a>
-        <a href="#">Seasons</a>
+        <!-- <h1>Sport<span>Tee</span></h1> -->
+        <a href="index.html" class="logo"
+          ><img src="images/logo.svg" alt="Logo Sporttee Webshop"
+        /></a>
+        <div class="menu-icon">
+          <a onclick="openmenumobile()"
+            ><img src="images/bars-solid.svg" alt="Burger Menu Icon"
+          /></a>
+        </div>
+        <ul id="mainmenu" class="menu-list">
+          <li><a href="#">Categories</a></li>
+          <li><a href="category.html">Brands</a></li>
+          <li><a href="#">Seasons</a></li>
+        </ul>
       </nav>
     </header>
     <main>
+      <section id="seasons">
+        <template id="seasonTemplate">
+          <a href="productlist.html?season=Fall">
+            <div class="seasonName">Fall</div>
+          </a>
+        </template>
+        <!-- <a
+          class="spring-season"
+          href="http://www.https://kea-alt-del.dk/t7/api/seasons"
+          ><div>Spring</div></a
+        >
+        <a
+          class="summer-season"
+          href="http://www.https://kea-alt-del.dk/t7/api/seasons"
+          ><div>Summer</div></a
+        >
+        <a
+          class="winter-season"
+          href="http://www.https://kea-alt-del.dk/t7/api/seasons"
+          ><div>Winter</div></a
+        > -->
+      </section>
+    </main>
+    <!-- <main>
       <section class="letterLinks">
         <ol>
           <li><a href="#letter_a">A</a></li>
@@ -113,8 +147,8 @@
           </ol>
         </section>
       </div>
-    </main>
+    </main> -->
 
-    <script src="main.js"></script>
+    <script src="category.js"></script>
   </body>
 </html>
